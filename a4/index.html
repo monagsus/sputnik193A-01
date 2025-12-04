@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>193A Web Programming</title>
+    <link rel="stylesheet" href="header.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Sputnik</h1>
+    </header>
+    <article>
+      <span><a href="#">Sputnik</a></span>
+      <span><a href="#">Cold War</a></span>
+      <span><a href="#">Videos</a></span>
+      <span><a href="#">Be a spaceman</a></span>
+      <span><form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="lookup on Google..." required>
+        <button type="submit">find</button>
+      </form></span>
+    </article>
+    <article>Sputnik was the first artifical satellite launched <bodl>in 1957</bodl> by the Soviet Union. 
+      This initial project from the rivaling state at the time would push forward the initiative of American space projects,
+      like NASA and DARPA, the latter formerly known as ARPA. <a href="#ff">...FUN FACT</a>
+    </article>
+    <article><img src="sputnik.png"/></article>
+    <article id="ff">After the launch of Sputnik, for the first time ever, the US administration
+      responded with the direct offering of federal funding in higher education known as 
+      the National Defense Education Act.
+    </article>
+    <script>
+      const strongEl = document.querySelector("article bodl");
+      const articleEl = document.querySelector("article");
+      articleEl.parentNode.insertBefore(strongEl, articleEl.nextSibling);
+      let ell = "...";
+      strongEl.textContent = strongEl.textContent.toUpperCase().concat(ell);
+
+      //document.querySelector("bodl").style.display = "inline";
+    </script>
+  </body>
+</html>
