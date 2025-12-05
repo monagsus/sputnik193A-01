@@ -1,0 +1,19 @@
+body {
+    font-size: 12pt;
+}
+
+.shmancy {
+    font-weight: bold;
+    color: purple;
+    text-decoration: green wavy underline;
+}
+
+.betty {
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+#text {
+    font-size: 6pt;
+}
